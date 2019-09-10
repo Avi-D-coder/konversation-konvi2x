@@ -1,7 +1,8 @@
-# Maintainer: Gustavo Alvarez <sl1pkn07@gmail.com>
+# Maintainer: Avi Dessauer <avi-the-coder@gmail.com>
+# A copy of: Gustavo Alvarez's konversation-git just building Konvi2x
 
-pkgname=konversation-git
-pkgver=1.7.master.5112.r8473.a6d18bd3
+pkgname=konversation-Konvi2x-git
+pkgver=1.7.konvi2x.5105.r8544.2ab5b3dc
 pkgrel=1
 pkgdesc="A user friendly IRC client for KDE. (GIT Version)"
 arch=('x86_64')
@@ -21,8 +22,8 @@ depends=('knotifyconfig'
          )
 optdepends=('python: python scripting support')
 conflicts=('konversation')
-provides=('konversation')
-source=('git://anongit.kde.org/konversation')
+provides=('konversation' 'Konvi2x')
+source=('git+https://anongit.kde.org/konversation#branch=wip/qtquick')
 sha256sums=('SKIP')
 
 pkgver() {
